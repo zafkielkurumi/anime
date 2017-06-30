@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>萌度-cosplay</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo/logo.png"/>
+    <link rel="stylesheet" href="CSS/nomalize.css"/>
+    <link rel="stylesheet" href="CSS/common.css"/>
+    <link rel="stylesheet" href="CSS/cosplay.css"/>
+    <script src="js/jquery-1.11.3.js"></script>
+</head>
+<body>
+<!--退出登录，登录界面的返回，注册页面似乎有问题，小北方关闭菜单，切换歌曲-->
+<!--头部logo，登陆信息-->
+<header id="header">
+    <div id="logo">
+        <a href="index.html">
+            <img src="images/logo/logo.png"/>
+        </a>
+        <ul class="rt">
+            <li>
+                <a href="login.html">登录</a>
+            </li>
+            <li>
+                <a href="register.html">注册</a>
+            </li>
+        </ul>
+        <div class="private" title="个人中心">
+            <a href="404.html" class="head"><img src="images/logo/user.png" /></a>
+        </div>
+        <!--<div>-->
+            <!--<a class="quit">退出登录</a>-->
+        <!--</div>-->
+    </div>
+</header>
+<!--导航-->
+<nav id="nav">
+    <div class="lf">
+        <button  title="选择背景" type="button" class="first"><i class="chgBg"></i></button>
+        <button  title="添加雪花" type="button" class="show last"><i class="snow"></i></button>
+        <!--下拉菜单出多个效果选择-->
+        <div class="modal">
+            <p class="modal-header">
+                <b>选择背景</b>
+                <button type="button" class="close">&times;</button>
+            </p>
+            <div class="modal-body">
+                <a ><img src="images/background/body_bg_0.jpg" alt="0"/></a>
+                <a ><img src="images/background/body_bg_1.jpg" alt="1"/></a>
+                <a ><img src="images/background/body_bg_2.jpg" alt="2"/></a>
+                <a ><img src="images/background/body_bg_3.jpg" alt="3"/></a>
+                <a ><img src="images/background/body_bg_4.jpg" alt="4"/></a>
+                <a><img src="images/background/body_bg_5.jpg" alt="5"/></a>
+                <a ><img src="images/background/body_bg_6.jpg" alt="6"/></a>
+                <a ><img src="images/background/body_bg_7.jpg" alt="7"/></a>
+                <a ><img src="images/background/body_bg_8.jpg" alt="8"/></a>
+                <a ><img src="images/background/body_bg_9.jpg" alt="9"/></a>
+                <a ><img src="images/background/body_bg_10.jpg" alt="10"/></a>
+                <a ><img src="images/background/body_bg_11.jpg" alt="10"/></a>
+            </div>
+        </div>
+    </div>
+    <ul class="rt">
+        <li>
+            <a href="index.html">首页</a>
+        </li>
+        <li>
+            <a href="news.html">新闻</a>
+        </li>
+        <li>
+            <a href="comic.html">动漫</a>
+        </li>
+        <li class="active">
+            <a href="cosplay.html" >写真|Cosplay</a>
+        </li>
+        <li>
+            <a href="picture.html">图片</a>
+        </li>
+    </ul>
+</nav>
+<!--主题内容-->
+
+<section>
+    <h3 class="head">
+        <a href="#" class="active" id="fate">fate</a>
+        <a href="#" id="yys">阴阳师</a>
+    </h3>
+    <div class="content">
+        <div id="content" class="lf">
+            <div id="thumnail" class="two">
+                <div class="load">
+                    <img src="images/Little_North/yome.gif"/>
+                </div>
+                <!--<div class="lf thumnail">-->
+                    <!--<a href="#">-->
+                        <!--<img src="images/fgo/Erzsebet_Bathory/04.JPG"/>-->
+                    <!--</a>-->
+                    <!--<h2>FGO伊丽莎白</h2>-->
+                    <!--<p>-->
+                        <!--伊丽莎白赞！-->
+                    <!--</p>-->
+                    <!--<a href="#" target="_blank" class="more">-->
+                        <!--阅读更多-->
+                    <!--</a>-->
+                <!--</div>-->
+                <!--<div class="lf  thumnail">-->
+                    <!--<a href="#">-->
+                        <!--<img src="images/fgo/Scathach/05.jpg" alt=""/>-->
+                    <!--</a>-->
+                    <!--<h2>FGO伊丽莎白</h2>-->
+                    <!--<p>-->
+                        <!--伊丽莎白赞！-->
+                    <!--</p>-->
+                    <!--<a href="#" target="_blank" class="more">-->
+                        <!--阅读更多-->
+                    <!--</a>-->
+                <!--</div>-->
+                <!--<div class="lf thumnail">-->
+                    <!--<a href="#">-->
+                        <!--<img src="images/fgo/Erzsebet_Bathory/04.JPG" alt=""/>-->
+                    <!--</a>-->
+                    <!--<h2>FGO伊丽莎白</h2>-->
+                    <!--<p>-->
+                        <!--伊丽莎白赞！-->
+                    <!--</p>-->
+                    <!--<a href="#" target="_blank" class="more">-->
+                        <!--阅读更多-->
+                    <!--</a>-->
+                <!--</div>-->
+                <!--<div class="lf thumnail">-->
+                    <!--<a href="#">-->
+                        <!--<img src="images/fgo/Erzsebet_Bathory/04.JPG" alt=""/>-->
+                    <!--</a>-->
+                    <!--<h2>FGO伊丽莎白</h2>-->
+                    <!--<p>-->
+                        <!--伊丽莎白赞！-->
+                    <!--</p>-->
+                    <!--<a href="#" target="_blank" class="more">-->
+                        <!--阅读更多-->
+                    <!--</a>-->
+                <!--</div>-->
+                <!--<div class="lf thumnail">-->
+                    <!--<a href="#">-->
+                        <!--<img src="images/fgo/saber/6.jpg"/>-->
+                    <!--</a>-->
+                    <!--<h2>FGO阿尔托莉雅（alter</h2>-->
+                    <!--<p>-->
+                        <!--我的呆毛呢-->
+                    <!--</p>-->
+                    <!--<a href="#" target="_blank" class="more">-->
+                        <!--阅读更多-->
+                    <!--</a>-->
+                <!--</div>-->
+                <!--<div class="lf thumnail">-->
+                    <!--<a href="#">-->
+                        <!--<img src="images/fgo/saber/6.jpg"/>-->
+                    <!--</a>-->
+                    <!--<h2>FGO阿尔托莉雅（alter</h2>-->
+                    <!--<p>-->
+                        <!--我的呆毛呢-->
+                    <!--</p>-->
+                    <!--<a href="#" target="_blank" class="more">-->
+                        <!--阅读更多-->
+                    <!--</a>-->
+                <!--</div>-->
+            </div>
+            <div id="pager">
+                <a class="disabled" href="1">第一页</a>
+                <a class="disabled" href="0">上一页</a>
+                <a href="2" >下一页</a>
+                <a class="page">末页</a>
+                <span>&nbsp;第 <input type="text" name="jumppage" value="1"/> 页</span>
+            </div>
+        </div>
+        <div id="right-content" class="rt">
+            <!--查看和音乐播放-->
+            <div class="view">
+                <span>查看</span>
+                <button type="button" class="first one"><i class="one"></i></button>
+                <button type="button" class="current two"><i class="two"></i></button>
+                <button  type="button" class="last img" style="  border-right-color: #ccc;"><i class="img"></i></button>
+            </div>
+            <div id="music">
+                <div class="cover" style="display: flex">
+                    <img src="images/logo/153.jpg"/>
+                    <div  class="control">
+                        <h3 class="title">God knows -  平野綾</h3>
+                        <div class="btnGroup">
+                            <i class="prev"></i>
+                            <i class="play"></i>
+                            <i class="next"></i>
+                            <i class="s_list"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="list">
+                    <ul>
+                        <li class="de index" >
+                            <u class="cur"></u>
+                            <span>1</span>
+                            <span class="nm">God knows - 平野綾</span>
+                            <audio src="res/audio/God%20knows....mp3" class="index" loop></audio>
+                        </li>
+                        <li>
+                            <u ></u>
+                            <span>2</span>
+                            <span class="nm">fallen down - 早見沙織</span>
+                            <audio src="res/audio/fallen%20down.mp3" loop></audio>
+                        </li>
+                        <li class="de">
+                            <u></u>
+                            <span>3</span>
+                            <span class="nm">Dragonsong - 植松伸夫</span>
+                            <audio src="res/audio/Dragonsong.mp3" loop></audio>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="callme">
+                <li>友情链接</li>
+                <li>
+                    <a href="https://space.bilibili.com/2482526/#!/" target="_blank">
+                        <img src="images/social/bilibili.jpg" />
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.acfun.cn/u/3897058.aspx#page=1" target="_blank">
+                        <img src="images/social/acfun.jpg" />
+                    </a>
+                </li>
+                <li>
+                    <a href="http://bbs.comicdd.com/" target="_blank">
+                        <img src="images/social/dd.jpg"/>
+                    </a>
+                </li>
+                <li>
+                    <br/>联系我
+                </li>
+                <li>
+                    <a class="qq"></a>
+                    <div class="qqcode"></div>
+
+                </li>
+                <li>
+                    <a class="wx"></a>
+                    <div class="wxcode"></div>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</section>
+<footer id="footer"></footer>
+<!--返回顶部-->
+<div class="toTop-wrapper hidden">
+    <div id="toTop" title="返回顶部"></div>
+</div>
+<!--图片预览-->
+<div class="imgPreview" style="">
+    <img src="" style="max-width: 500px;max-height:500px;border:2px solid"/>
+</div>
+<!--召唤北方-->
+<div id="pet">
+    <div class="chat">
+        是谁在召唤小北方
+        <a href="#">|&nbsp;&nbsp;菜单&nbsp;&nbsp;|</a>
+    </div>
+    <div class="gif"></div>
+    <div class="chatMenu">
+        <p>想做什么呢？</p>
+        <ul>
+            <li>
+                <a href="#">播放音乐</a>
+            </li>
+            <li>
+                <a href="#">暂停音乐</a>
+            </li>
+            <li>
+                <a href="#">切换背景</a>
+            </li>
+            <li>
+                <a href="#" class="login">登录</a>
+            </li>
+            <li>
+                <a href="#" class="close">关闭北方</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="north">
+    召唤小北方
+</div>
+<!--canvas背景-->
+<canvas id="canvas"></canvas>
+<script src="js/pagelist.js"></script>
+<script src="js/north.js"></script>
+<script src="js/bg.js"></script>
+<script src="js/snow.js"></script>
+</body>
+</html>

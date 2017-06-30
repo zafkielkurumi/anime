@@ -1,0 +1,52 @@
+/*新闻独有的详细新闻页面盒子*/
+body.cmodal-open{
+    overflow: hidden;
+}
+div.modal-box{
+    position: fixed;
+    top:0;left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+    display: none;
+    overflow: auto;
+}
+div.modal-box div.modal-body h3{
+    padding: 20px 0;
+}
+div.modal-box div.modal-body p{
+    padding: 10px 0;
+    line-height: 20px;
+}
+div.cmodal{
+    right: 0;
+    top: 10px;
+    height: auto !important;
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+div.cmodal .modal-body{
+    overflow: inherit;
+    height: auto !important;
+}
+div.cmodal .modal-body p{
+    margin: 10px auto;
+    width: 80%;
+    text-align: left;
+}
+@media screen and (max-width: 767px){
+    div.cmodal{
+        width: 100%;
+    }
+}
+div.cmodal div.modal-body{
+    text-align: center;
+    display: block;
+    color:black;
+}
+div.cmodal div.modal-body img{
+    width: 80%;
+    min-height: 500px;
+}

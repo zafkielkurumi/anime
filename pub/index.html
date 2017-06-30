@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+    <title>萌度</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo/logo.png"/>
+    <link rel="stylesheet" href="CSS/animate.css"/>
+    <link rel="stylesheet" href="CSS/index.css"/>
+</head>
+<body>
+<!--还差BGM,声音，效果，白色横条可以加点特效，比如开局一到光线滑过等-->
+<header>
+<div id="logo">
+    <a href="index.html">
+        <img src="images/logo/logo.png" class="img-responsive"/>
+    </a>
+    <p id="title">
+        萌度
+    </p>
+    <i></i>
+    <!--<div style="margin:auto;text-align: center">-->
+
+        <!--<canvas id="line" height="2" width="800"></canvas>-->
+    <!--</div>-->
+</div>
+</header>
+<audio src="res/loli.mp3" id="audio"></audio>
+<section>
+    <ul>
+        <li>
+            <a href="news.html">NEWS</a>
+        </li>
+        <li>
+            <a href="comic.html">COMIC</a>
+        </li>
+        <li>
+            <a href="cosplay.html">COSPLAY</a>
+        </li>
+        <li>
+            <a href="picture.html">PICTURE</a>
+
+        </li>
+    </ul>
+</section>
+<!--还差BGM,声音，效果,鼠标图标等-->
+<script src="js/jquery-1.11.3.js"></script>
+<!--<script src="js/line.js"></script>-->
+<script>
+    $(window).load(function () {
+        $("header i").animate({
+            width:'75%'
+        },1500);
+        audio.play();
+    })
+</script>
+</body>
+</html>

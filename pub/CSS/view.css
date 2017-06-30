@@ -1,0 +1,16 @@
+#content{
+    text-align: center;
+    margin: auto;
+    padding: 20px 0;
+}
+#content img{
+    margin: 20px 0;
+    width: 80%;
+}
+#content div{
+    padding-left: 10%;
+    width: 80%;
+    text-align: left;
+    font-size: 1.2em;
+    line-height:22px ;
+}

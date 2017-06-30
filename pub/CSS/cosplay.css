@@ -1,0 +1,149 @@
+/*动画*/
+@keyframes fade {
+    0%{
+        transform: translatey(100px);
+        opacity: 0;
+    }
+    100%{
+    transform: translatey(0);
+    opacity: 1;
+}
+}
+.fade{
+    animation: fade 0.5s ease-in-out;
+}
+#thumnail h2 a.title{
+    color:black;
+}
+#thumnail h2 a.title:hover{
+    color:#EC005D;
+}
+/*thumnail的CSS，2分*/
+#thumnail{
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+    transform-style:preserve-3d;
+}
+#content .thumnail{
+    width:44%;
+    background: #F6F6F6;
+    padding:5px;
+    margin:10px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    transition: all 0.2s linear;
+}
+#thumnail.two .thumnail:hover{
+    transform: scale(1.05);
+}
+#thumnail.two .thumnail:hover img,#thumnail.img .thumnail:hover img{
+    transform: scale(1.2);
+}
+#thumnail.two img{
+    max-height: 300px;
+}
+#content a.preview{
+    display: inline-block;
+    overflow: hidden;
+}
+#content .thumnail:hover{
+    border: 1px solid #24A9F6;
+    box-shadow: 0 0 1px;
+    background: white;
+}
+ div.thumnail img{
+    width: 100%;
+     transition: 0.5s;
+}
+ div.thumnail h2,.thumnail div{
+    margin:20px 0;
+    padding-left:20px;
+     overflow: hidden;
+     /*text-overflow: ellipsis;*/
+     /*white-space:nowrap;*/
+}
+@media screen and (max-width: 520px){
+    div.thumnail h2{
+        font-size: 16px;
+    }
+}
+.thumnail div{
+    height: 35px;
+    /*overflow: hidden;*/
+
+  font-weight: 600;
+}
+ div.thumnail a.more{
+    display: inline-block;
+    padding:2px;
+    color:#fff;
+    background: #EB005D;
+    margin-left:20px;
+    margin-bottom: 20px;
+    transition: all 0.15s linear;
+}
+div.thumnail a.more:hover{
+    padding: 2px 10px;
+    background:#101010;
+}
+@media screen and (max-width: 767px){
+    #content,#content div.thumnail{
+        width: 100%;
+    }
+}
+/*news1分*， 给div加一个one css*/
+#thumnail.one div.thumnail{
+    width:90%;
+}
+#thumnail.one .thumnail.hover{
+    /*box-sizing: border-box;*/
+    padding:10px 5px;
+    background: white;
+}
+#thumnail.one div.thumnail img{
+    height: 105px;
+    width:100%;
+}
+#thumnail.one div.thumnail a.preview{
+    width: 20%;
+}
+#thumnail.one div.thumnail a{
+    float: left;
+    margin-bottom: 0;
+}
+#thumnail.one div.thumnail  div,#thumnail.one div.thumnail h2{
+    float: left;
+    width: 73%;
+    margin: 0;
+    margin-bottom: 5px;
+    /*height:30px;*/
+}
+/*大图 1分*/
+#thumnail.img{
+    justify-content: center;
+}
+#thumnail.img div.thumnail{
+    width: 70%;
+    background: none;
+    border: none;
+}
+#thumnail.img div.thumnail:hover{
+    border: none;
+    box-shadow: none;
+}
+#thumnail.img div.thumnail img{
+    width: 100%;
+}
+#thumnail.img div.thumnail h2,#thumnail.img div.thumnail div{
+    margin: 10px 0;
+    padding-left: 0;
+}
+#thumnail.img div.thumnail a.more{
+    margin-left: 0;
+}
+#thumnail.img div.thumnail .divider{
+    display: block;
+}
+
+

@@ -1,0 +1,27 @@
+#content img{
+    max-width: 100%;
+}
+#content>div{
+    width:70%;
+    margin:0 auto;
+}
+#content>div>a{
+    display: block;
+    padding:10px 0;
+    font-size:25px;
+    color:#101010;
+}
+#content a:hover{
+    color: #EC005D;
+}
+dd{
+    text-align: left;
+    line-height:22px;
+    margin:10px 0;
+}
+dd a{
+    color:#1982D1;
+}
+#thumnail.tow div.thumnail{
+    width: 100%;
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>萌度-注册</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo/logo.png"/>
+    <link rel="stylesheet" href="CSS/nomalize.css"/>
+    <link rel="stylesheet" href="CSS/common.css"/>
+    <link rel="stylesheet" href="CSS/cosplay.css"/>
+    <link rel="stylesheet" href="CSS/account.css"/>
+    <script src="js/jquery-1.11.3.js"></script>
+</head>
+<body>
+<!--右下角召唤北方？金馆长》？-->
+<!--滚动鼠标后，从内容下出现返回顶部的萌图按钮-->
+<!--h改变鼠标样式，滑动有痕迹效果，-->
+<header id="header">
+    <div id="logo">
+        <a href="index.html">
+            <img src="images/logo/logo.png"/>
+        </a>
+        <ul class="rt">
+            <li>
+                <a href="login.html">登录</a>
+            </li>
+            <li>
+                <a href="register.html">注册</a>
+            </li>
+        </ul>
+        <div class="private">
+            <a href="404.html"><img src="images/logo/user.png" /></a>
+        </div>
+    </div>
+</header>
+<nav id="nav">
+    <div class="lf">
+        <button  title="选择背景" type="button" class="first"><i class="chgBg"></i></button>
+        <button  title="添加雪花" type="button" class="show last"><i class="snow"></i></button>
+        <!--下拉菜单出多个效果选择-->
+        <div class="modal">
+            <p class="modal-header">
+                <b>选择背景</b>
+                <button type="button" class="close">&times;</button>
+            </p>
+            <div class="modal-body">
+                <a ><img src="images/background/body_bg_0.jpg" alt="0"/></a>
+                <a ><img src="images/background/body_bg_1.jpg" alt="1"/></a>
+                <a ><img src="images/background/body_bg_2.jpg" alt="2"/></a>
+                <a ><img src="images/background/body_bg_3.jpg" alt="3"/></a>
+                <a ><img src="images/background/body_bg_4.jpg" alt="4"/></a>
+                <a><img src="images/background/body_bg_5.jpg" alt="5"/></a>
+                <a ><img src="images/background/body_bg_6.jpg" alt="6"/></a>
+                <a ><img src="images/background/body_bg_7.jpg" alt="7"/></a>
+                <a ><img src="images/background/body_bg_8.jpg" alt="8"/></a>
+                <a ><img src="images/background/body_bg_9.jpg" alt="9"/></a>
+                <a ><img src="images/background/body_bg_10.jpg" alt="10"/></a>
+                <a ><img src="images/background/body_bg_11.jpg" alt="10"/></a>
+            </div>
+        </div>
+    </div>
+    <ul class="rt">
+        <li>
+            <a href="index.html">首页</a>
+        </li>
+        <li>
+            <a href="news.html">新闻</a>
+        </li>
+        <li>
+            <a href="comic.html">动漫</a>
+        </li>
+        <li>
+            <a href="cosplay.html" >写真|Cosplay</a>
+        </li>
+        <li>
+            <a href="picture.html">图片</a>
+        </li>
+    </ul>
+</nav>
+<section>
+    <h3 class="head">
+        <a href="#" class="active" id="user">注册</a>
+    </h3>
+    <div class="content" style="min-height: 300px">
+        <form action="">
+            <div>
+                <label for="uname">用户名:</label>
+                <input type="text" id="uname" placeholder="请输入用户名" class="input"/>
+                <span class="uname">请输入你的邮箱</span>
+            </div>
+            <div>
+                <label for="upwd">密码:</label>
+                <input type="password" id="upwd" placeholder="请输入密码" class="input"/>
+                <span class="upwd">密码为3-10位数字或字母</span>
+            </div>
+            <div>
+                <label for="pwd">确认密码:</label>
+                <input type="password" id="pwd" placeholder="确认密码" class="input"/>
+                <span class="pwd"></span>
+            </div>
+            <div class="button">
+                <input type="button" value="注册" class="reg"/>
+            </div>
+        </form>
+        <div id="music" style="display: none">
+            <div class="cover" style="display: flex">
+                <img src="images/logo/153.jpg"/>
+                <div  class="control">
+                    <h3 class="title">God knows -  平野綾</h3>
+                    <div class="btnGroup">
+                        <i class="prev"></i>
+                        <i class="play"></i>
+                        <i class="next"></i>
+                        <i class="s_list"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="list">
+                <ul>
+                    <li class="de index" >
+                        <u class="cur"></u>
+                        <span>1</span>
+                        <span class="nm">God knows - 平野綾</span>
+                        <audio src="res/audio/God%20knows....mp3" class="index" loop></audio>
+                    </li>
+                    <li>
+                        <u ></u>
+                        <span>2</span>
+                        <span class="nm">fallen down - 早見沙織</span>
+                        <audio src="res/audio/fallen%20down.mp3" loop></audio>
+                    </li>
+                    <li class="de">
+                        <u></u>
+                        <span>3</span>
+                        <span class="nm">Dragonsong - 植松伸夫</span>
+                        <audio src="res/audio/Dragonsong.mp3" loop></audio>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<footer id="footer"></footer>
+<div class="toTop-wrapper hidden">
+    <div id="toTop" title="返回顶部"></div>
+</div>
+<div id="pet">
+    <div class="chat">
+        是谁在召唤小北方
+        <a href="#">|&nbsp;&nbsp;菜单&nbsp;&nbsp;|</a>
+    </div>
+    <div class="gif"></div>
+    <div class="chatMenu">
+        <p>想做什么呢？</p>
+        <ul>
+            <li>
+                <a href="#">播放音乐</a>
+            </li>
+            <li>
+                <a href="#">暂停音乐</a>
+            </li>
+            <li>
+                <a href="#">切换背景</a>
+            </li>
+            <li>
+                <a href="#" class="login">登录</a>
+            </li>
+            <li>
+                <a href="#" class="close">关闭北方</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="north">
+    召唤小北方
+</div>
+<canvas id="canvas"></canvas>
+<script src="js/register.js"></script>
+<script src="js/north.js"></script>
+<script src="js/bg.js"></script>
+<script src="js/snow.js"></script>
+</body>
+</html>
